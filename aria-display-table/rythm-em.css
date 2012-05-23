@@ -1,0 +1,59 @@
+/*========================================================================================================\
+*        =Rythm & color
+\........................................................................................................*/
+
+/* 
+using height:100% on html and body allows to style containers with a 100% height
+*/
+html, body { 	/*height: 100%;*/ }
+html {
+				overflow-y: scroll; /* always force a scrollbar in non-IE */ 
+				font-size: 100.01%; /* font-size: 100.01% to prevent bugs in IE and Opera */		
+}
+body {
+				font-size: 81.25%; /* 13px */
+				line-height: 1.539; /* 20px */
+}
+body, select, input, textarea, button {
+				color: #333;
+				font-family: 'MuseoSlab500', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				letter-spacing: .05em;
+}
+h1, h2, h3, h4, h5, h6 {
+				margin: 1em 0 .5em 0;
+				line-height: 1;
+				letter-spacing: .01em;
+}
+h1 { 			font-size: 1.539em; /*20px*/ }
+h2 { 			font-size: 1.385em; /*18px*/ }
+h3 { 			font-size: 1.231em; /*16px*/ }
+h4 { 			font-size: 1em; /*13px*/ font-variant: small-caps; }
+h5 { 
+				font-size: 1em; /*13px*/
+				font-variant: small-caps;
+				font-style: italic;
+}
+h6 { 			font-size: 1em; } 
+
+p, blockquote, figure, dl, dialog, ol, ul, nav, menu {
+				margin-bottom: 1.5em; 
+}
+blockquote p, li p, dl p {
+				margin-bottom: .75em;
+}
+
+p { 
+				text-align: justify;
+				letter-spacing: .01em;
+				word-spacing: .05em; 
+				hyphenate: auto; 
+				hyphenate-lines: 3; 
+}
+.hentry p+p { 	text-indent: 1.5em; }
+
+table, form {
+				margin-bottom: 1.4em;
+}
+th, td, caption, fieldset { 
+				padding: .25em .625em .25em .3125em;
+}

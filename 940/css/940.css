@@ -1,0 +1,243 @@
+/*
+	940.CSS Version Fixe
+	Version : 1
+	Auteur : Bruno Bichet @br1o
+	 
+	Détails : 
+	http://css.4design.tl/940-css
+	http://css4design.com/frameworks-css-fusion-blueprint-960-gs-the-simpler-grid
+
+	Existe en version fluide : http://css.4design.tl/exemples/940/css/940-fluid.css
+
+	Inspiration : 
+	http://blueprintcss.org
+	http://960.gs
+	http://webdesignerwall.com/tutorials/the-simpler-css-grid
+		
+	Licence : GPL et MIT
+				
+	Document presque valide CSS niveau 2.1 : http://plus.tl/940-fixe
+*/
+
+/* Au cas où vous auriez besoin d'un "container" pour un background de 960px. 
+   Il sera peut-être nécessaire de spécifier un background sur la balise html.
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+*/
+
+/* Groupez vos colonnes dans un container. 
+   Il est possible d'avoir plusieurs containers dans la même page. */
+.container {
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Un clearfix peut être nécessaire */
+.container:before, .container:after { content: ""; display: table; }
+.container:after { clear: both; }
+.container { *zoom: 1; }
+
+/* Affichez la grille de mise en page sur un élément .span-x ou .container. */
+.showgrid { background: url(../img/grid.png); }
+
+/* Réglages de base pour les colonnes et la gouttière. */
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
+/* La première colonne a besoin de cette classe. 
+   Possibilité de remplacer .first par :first-child à partir de IE7 et selon la structure de votre document */
+.first { 
+	margin-left: 0;
+	clear: left; 
+}
+
+/* Largeur des colonnes */
+.span-1  { width: 20px; }
+.span-2  { width: 60px; }
+.span-3  { width: 100px; }
+.span-4  { width: 140px; }
+.span-5  { width: 180px; }
+.span-6  { width: 220px; }
+.span-7  { width: 260px; }
+.span-8  { width: 300px; }
+.span-9  { width: 340px; }
+.span-10  { width: 380px; }
+.span-11  { width: 420px; }
+.span-12  { width: 460px; }
+.span-13  { width: 500px; }
+.span-14  { width: 540px; }
+.span-15  { width: 580px; }
+.span-16  { width: 620px; }
+.span-17  { width: 660px; }
+.span-18  { width: 700px; }
+.span-19  { width: 740px; }
+.span-20  { width: 780px; }
+.span-21  { width: 820px; }
+.span-22  { width: 860px; }
+.span-23  { width: 900px; }
+.span-24  { width: 940px; margin-left: 0; clear: left; }
+
+/* Ajoutez des colonnes vides après votre élément (suffixe). */
+.append-1  { padding-right: 40px; } 
+.append-2  { padding-right: 80px; } 
+.append-3  { padding-right: 120px; } 
+.append-4  { padding-right: 160px; } 
+.append-5  { padding-right: 200px; } 
+.append-6  { padding-right: 240px; } 
+.append-7  { padding-right: 280px; } 
+.append-8  { padding-right: 320px; } 
+.append-9  { padding-right: 360px; } 
+.append-10  { padding-right: 400px; } 
+.append-11  { padding-right: 440px; } 
+.append-12  { padding-right: 480px; } 
+.append-13  { padding-right: 520px; } 
+.append-14  { padding-right: 560px; } 
+.append-15  { padding-right: 600px; } 
+.append-16  { padding-right: 640px; } 
+.append-17  { padding-right: 680px; } 
+.append-18  { padding-right: 720px; } 
+.append-19  { padding-right: 760px; } 
+.append-20  { padding-right: 800px; } 
+.append-21  { padding-right: 840px; } 
+.append-22  { padding-right: 880px; } 
+.append-23  { padding-right: 920px; }
+.append-24  { padding-right: 960px; } 
+
+/* Ajoutez des colonnes vides avant votre élément (préfixe). */
+.prepend-1  { padding-left: 40px; } 
+.prepend-2  { padding-left: 80px; } 
+.prepend-3  { padding-left: 120px; } 
+.prepend-4  { padding-left: 160px; } 
+.prepend-5  { padding-left: 200px; } 
+.prepend-6  { padding-left: 240px; } 
+.prepend-7  { padding-left: 280px; } 
+.prepend-8  { padding-left: 320px; } 
+.prepend-9  { padding-left: 360px; } 
+.prepend-10  { padding-left: 400px; } 
+.prepend-11  { padding-left: 440px; } 
+.prepend-12  { padding-left: 480px; } 
+.prepend-13  { padding-left: 520px; } 
+.prepend-14  { padding-left: 560px; } 
+.prepend-15  { padding-left: 600px; } 
+.prepend-16  { padding-left: 640px; } 
+.prepend-17  { padding-left: 680px; } 
+.prepend-18  { padding-left: 720px; } 
+.prepend-19  { padding-left: 760px; } 
+.prepend-20  { padding-left: 800px; } 
+.prepend-21  { padding-left: 840px; } 
+.prepend-22  { padding-left: 880px; } 
+.prepend-23  { padding-left: 920px; } 
+.prepend-24  { padding-left: 960px; } 
+
+/* Bordure sur le côté gauche d'une colonne. */
+.border {
+	padding-left: 10px;
+	margin-left: 9px;
+	border-left: 1px solid #ddd;
+}
+
+/* Bordure avec un espace supplémentaire occupant la largeur d'une colonne. */
+div.colborder {
+	padding-left: 30px;
+	margin-left: 29px;
+	border-left: 1px solid #eee;
+}
+
+/* Tirez un élément vers la colonne précédente. */
+.pull-1 { left: -40px; }
+.pull-2 { left: -80px; }
+.pull-3 { left: -120px; }
+.pull-4 { left: -160px; }
+.pull-5 { left: -200px; }
+.pull-6 { left: -240px; }
+.pull-7 { left: -280px; }
+.pull-8 { left: -320px; }
+.pull-9 { left: -360px; }
+.pull-10 { left: -400px; }
+.pull-11 { left: -440px; }
+.pull-12 { left: -480px; }
+.pull-13 { left: -520px; }
+.pull-14 { left: -560px; }
+.pull-15 { left: -600px; }
+.pull-16 { left: -640px; }
+.pull-17 { left: -680px; }
+.pull-18 { left: -720px; }
+.pull-19 { left: -760px; }
+.pull-20 { left: -800px; }
+.pull-21 { left: -840px; }
+.pull-22 { left: -880px; }
+.pull-23 { left: -920px; }
+.pull-24 { left: -960px; }
+
+/* Poussez un élément dans la colonne suivante. */
+.push-1 { left: 40px; }
+.push-2 { left: 80px; }
+.push-3 { left: 120px; }
+.push-4 { left: 160px; }
+.push-5 { left: 200px; }
+.push-6 { left: 240px; }
+.push-7 { left: 280px; }
+.push-8 { left: 320px; }
+.push-9 { left: 360px; }
+.push-10 { left: 400px; }
+.push-11 { left: 440px; }
+.push-12 { left: 480px; }
+.push-13 { left: 520px; }
+.push-14 { left: 560px; }
+.push-15 { left: 600px; }
+.push-16 { left: 640px; }
+.push-17 { left: 680px; }
+.push-18 { left: 720px; }
+.push-19 { left: 760px; }
+.push-20 { left: 800px; }
+.push-21 { left: 840px; }
+.push-22 { left: 880px; }
+.push-23 { left: 920px; }
+.push-24 { left: 960px; }
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24,
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {
+	position: relative;
+	z-index: 1;
+}
+
+/* Largeur des éléments input et textarea. */
+
+input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
+	border: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input.span-1, textarea.span-1 { width: 8px; }
+input.span-2, textarea.span-2 { width: 48px; }
+input.span-3, textarea.span-3 { width: 88px; }
+input.span-4, textarea.span-4 { width: 128px; }
+input.span-5, textarea.span-5 { width: 168px; }
+input.span-6, textarea.span-6 { width: 208px; }
+input.span-7, textarea.span-7 { width: 248px; }
+input.span-8, textarea.span-8 { width: 288px; }
+input.span-9, textarea.span-9 { width: 328px; }
+input.span-10, textarea.span-10 { width: 368px; }
+input.span-11, textarea.span-11 { width: 408px; }
+input.span-12, textarea.span-12 { width: 448px; }
+input.span-13, textarea.span-13 { width: 488px; }
+input.span-14, textarea.span-14 { width: 528px; }
+input.span-15, textarea.span-15 { width: 568px; }
+input.span-16, textarea.span-16 { width: 608px; }
+input.span-17, textarea.span-17 { width: 648px; }
+input.span-18, textarea.span-18 { width: 688px; }
+input.span-19, textarea.span-19 { width: 728px; }
+input.span-20, textarea.span-20 { width: 768px; }
+input.span-21, textarea.span-21 { width: 808px; }
+input.span-22, textarea.span-22 { width: 848px; }
+input.span-23, textarea.span-23 { width: 888px; }
+input.span-24, textarea.span-24 { width: 928px; }
+
+/* Merci de votre attention. */

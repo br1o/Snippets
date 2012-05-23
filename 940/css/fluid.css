@@ -1,0 +1,266 @@
+/* --------------------------------------------------------------
+
+	The Blue «Fluid» Grid Simpler
+	Version : 0.5
+	Goupilled with br1o :-)
+	http://css4design.com/frameworks-css-fusion-blueprint-960-gs-the-simpler-grid
+	
+	Sources :
+		960 Grid System [http://960.gs]
+		Blueprint CSS [http://blueprintcss.org]
+		The Simpler Grid [http://webdesignerwall.com/tutorials/the-simpler-css-grid]
+		
+	Licence : GPL et MIT
+	
+	J'utilise HTML5 Boilerplate [http://html5boilerplate.com]
+	
+	Plus d'information sur les grilles et les frameworks CSS :
+		http://css4design.com/tag/framework-css
+		http://css4design.com/tag/grille
+		
+	Et plus particulièrment :
+		http://css4design.com/grille-typographique-nombre-d-or
+		http://css4design.com/frameworks-css-blueprint-vs-960-grid-system
+		
+		
+	Document valide conformément à la recommandation CSS niveau 2.1 : http://j.mp/i0KCPb
+
+-------------------------------------------------------------- */
+
+/* Au cas où vous auriez besoin d'un "container" pour un background de 960px. 
+(Il sera peut-être nécessaire de spécifier un background sur la balise html.) 
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+*/
+
+/* Groupez vos colonnes dans un container. 
+Il est possible d'avoir plusieurs containers dans la même page. */
+.container {
+	min-width: 940px;
+	max-width: 98%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Affichez la grille de mise en page sur un élément .span-x ou .container. */
+/*.showgrid { background: url(../img/grid.png); }*/
+
+/* Réglages de base pour les colonnes et la gouttière. */
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23 {
+	float: left;
+	margin-left: 2%;
+	position: relative;
+}
+
+/* La première colonne a besoin de cette classe. */
+.first { 
+	margin-left: 0;
+	clear: left; 
+}
+
+/* Largeur des colonnes */
+.span-1 { width: 2.167%; }
+.span-2 { width: 6.333%; }
+.span-3 { width: 10.5%; }
+.span-4 { width: 14.667%; }
+.span-5 { width: 18.833%; }
+.span-6 { width: 23.0%; }
+.span-7 { width: 27.167%; }
+.span-8 { width: 31.333%; }
+.span-9 { width: 35.5%; }
+.span-10 { width: 39.667%; }
+.span-11 { width: 43.833%; }
+.span-12 { width: 48.0%; }
+.span-13 { width: 52.167%; }
+.span-14 { width: 56.333%; }
+.span-15 { width: 60.5%; }
+.span-16 { width: 64.667%; }
+.span-17 { width: 68.833%; }
+.span-18 { width: 73.0%; }
+.span-19 { width: 77.167%; }
+.span-20 { width: 81.333%; }
+.span-21 { width: 85.5%; }
+.span-22 { width: 89.667%; }
+.span-23 { width: 93.833%; }
+.span-all { width: 98.0%; }
+
+/* Ajoutez des colonnes vides avant votre élément (préfixe). */
+.prepend-1  { padding-left: 4.167%; } 
+.prepend-2  { padding-left: 8.333%; } 
+.prepend-3  { padding-left: 12.5%; } 
+.prepend-4  { padding-left: 16.667%; } 
+.prepend-5  { padding-left: 20.833%; } 
+.prepend-6  { padding-left: 25.0%; } 
+.prepend-7  { padding-left: 29.167%; } 
+.prepend-8  { padding-left: 33.333%; } 
+.prepend-9  { padding-left: 37.5%; } 
+.prepend-10  { padding-left: 41.667%; } 
+.prepend-11  { padding-left: 45.833%; } 
+.prepend-12  { padding-left: 50.0%; } 
+.prepend-13  { padding-left: 54.167%; } 
+.prepend-14  { padding-left: 58.333%; } 
+.prepend-15  { padding-left: 62.5%; } 
+.prepend-16  { padding-left: 66.667%; } 
+.prepend-17  { padding-left: 70.833%; } 
+.prepend-18  { padding-left: 75.0%; } 
+.prepend-19  { padding-left: 79.167%; } 
+.prepend-20  { padding-left: 83.333%; } 
+.prepend-21  { padding-left: 87.5%; } 
+.prepend-22  { padding-left: 91.667%; } 
+.prepend-23  { padding-left: 95.833%; } 
+
+/* Ajoutez des colonnes vides après votre élément (suffixe). */
+.append-1  { padding-right: 4.167%; } 
+.append-2  { padding-right: 8.333%; } 
+.append-3  { padding-right: 12.5%; } 
+.append-4  { padding-right: 16.667%; } 
+.append-5  { padding-right: 20.833%; } 
+.append-6  { padding-right: 25.0%; } 
+.append-7  { padding-right: 29.167%; } 
+.append-8  { padding-right: 33.333%; } 
+.append-9  { padding-right: 37.5%; } 
+.append-10  { padding-right: 41.667%; } 
+.append-11  { padding-right: 45.833%; } 
+.append-12  { padding-right: 50.0%; } 
+.append-13  { padding-right: 54.167; } 
+.append-14  { padding-right: 58.333%; } 
+.append-15  { padding-right: 62.5%; } 
+.append-16  { padding-right: 66.667%; } 
+.append-17  { padding-right: 70.833%; } 
+.append-18  { padding-right: 75.0%; } 
+.append-19  { padding-right: 79.167%; } 
+.append-20  { padding-right: 83.333%; } 
+.append-21  { padding-right: 87.5%; } 
+.append-22  { padding-right: 91.667%; } 
+.append-23  { padding-right: 95.833%; } 
+
+/* Bordure sur le côté gauche d'une colonne. */
+.border {
+	border-left: 1px solid #ddd;
+}
+
+/* Bordure avec un espace supplémentaire occupant la largeur d'une colonne. */
+div.colborder {
+	padding-left: 2%;
+	margin-left: 2%;
+	border-left: 1px solid #ddd;
+}
+
+/* Tirez un élément vers la colonne précédente ou poussez-le dans la colonne suivante. */
+
+.pull-1  { left: -4.167%; } 
+.pull-2  { left: -8.333%; } 
+.pull-3  { left: -12.5%; } 
+.pull-4  { left: -16.667%; } 
+.pull-5  { left: -20.833%; } 
+.pull-6  { left: -25.0%; } 
+.pull-7  { left: -29.167%; } 
+.pull-8  { left: -33.333%; } 
+.pull-9  { left: -37.5%; } 
+.pull-10  { left: -41.667%; } 
+.pull-11  { left: -45.833%; } 
+.pull-12  { left: -50.0%; } 
+.pull-13  { left: -54.167%; } 
+.pull-14  { left: -58.333%; } 
+.pull-15  { left: -62.5%; } 
+.pull-16  { left: -66.667%; } 
+.pull-17  { left: -70.833%; } 
+.pull-18  { left: -75.0%; } 
+.pull-19  { left: -79.167%; } 
+.pull-20  { left: -83.333%; } 
+.pull-21  { left: -87.5%; } 
+.pull-22  { left: -91.667%; } 
+.pull-23  { left: -95.833%; } 
+.pull-all  { left: -98%; } 
+
+.push-1  { left: 4.167%; } 
+.push-2  { left: 8.333%; } 
+.push-3  { left: 12.5%; } 
+.push-4  { left: 16.667%; } 
+.push-5  { left: 20.833%; } 
+.push-6  { left: 25.0%; } 
+.push-7  { left: 29.167%; } 
+.push-8  { left: 33.333%; } 
+.push-9  { left: 37.5%; } 
+.push-10  { left: 41.667%; } 
+.push-11  { left: 45.833%; } 
+.push-12  { left: 50.0%; } 
+.push-13  { left: 54.167%; } 
+.push-14  { left: 58.333%; } 
+.push-15  { left: 62.5%; } 
+.push-16  { left: 66.667%; } 
+.push-17  { left: 70.833%; } 
+.push-18  { left: 75.0%; } 
+.push-19  { left: 79.167%; } 
+.push-20  { left: 83.333%; } 
+.push-21  { left: 87.5%; } 
+.push-22  { left: 91.667%; } 
+.push-23  { left: 95.833%; }
+.push-all  { left: 98%; }  
+
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-all,
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-all {
+	position: relative;
+	z-index: 1;
+}
+
+/* Largeur des éléments input et textarea. */
+
+.span-1 input, .span-1 textarea,
+.span-2 input, .span-2 textarea, 
+.span-3 input, .span-3 textarea, 
+.span-4 input, .span-4 textarea, 
+.span-5 input, .span-5 textarea, 
+.span-6 input, .span-6 textarea, 
+.span-7 input, .span-7 textarea, 
+.span-8 input, .span-8 textarea, 
+.span-9 input, .span-9 textarea, 
+.span-10 input, .span-10 textarea, 
+.span-11 input, .span-11 textarea, 
+.span-12 input, .span-12 textarea,
+.span-13 input, .span-13 textarea,
+.span-14 input, .span-14 textarea, 
+.span-15 input, .span-15 textarea, 
+.span-16 input, .span-16 textarea, 
+.span-17 input, .span-17 textarea, 
+.span-18 input, .span-18 textarea, 
+.span-19 input, .span-19 textarea, 
+.span-20 input, .span-20 textarea, 
+.span-21 input, .span-21 textarea, 
+.span-22 input, .span-22 textarea, 
+.span-23 input, .span-23 textarea, 
+.span-all input, .span-all textarea  {
+	border: 1px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.span-1 input, .span-1 textarea { width: 2.167%; }
+.span-2 input, .span-2 textarea { width: 6.333%; }
+.span-3 input, .span-3 textarea { width: 10.5%; }
+.span-4 input, .span-4 textarea { width: 14.667%; }
+.span-5 input, .span-5 textarea { width: 18.833%; }
+.span-6 input, .span-6 textarea { width: 23.0%; }
+.span-7 input, .span-7 textarea { width: 27.167%; }
+.span-8 input, .span-8 textarea { width: 31.333%; }
+.span-9 input, .span-9 textarea { width: 35.5%; }
+.span-10 input, .span-10 textarea { width: 39.667%; }
+.span-11 input, .span-11 textarea { width: 43.833%; }
+.span-12 input, .span-12 textarea { width: 48.0%; }
+.span-13 input, .span-13 textarea { width: 52.167%; }
+.span-14 input, .span-14 textarea { width: 56.333%; }
+.span-15 input, .span-15 textarea { width: 60.5%; }
+.span-16 input, .span-16 textarea { width: 64.667%; }
+.span-17 input, .span-17 textarea { width: 68.833%; }
+.span-18 input, .span-18 textarea { width: 73.0%; }
+.span-19 input, .span-19 textarea { width: 77.167%; }
+.span-20 input, .span-20 textarea { width: 81.333%; }
+.span-21 input, .span-21 textarea { width: 85.5%; }
+.span-22 input, .span-22 textarea { width: 89.667%; }
+.span-23 input, .span-23 textarea { width: 93.833%; }
+.span-all input, .span-all textarea { width: 98.0%; }
+
+/* Merci de votre attention. */

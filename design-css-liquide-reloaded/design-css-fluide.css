@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* Structure générale */
+.wrapModules {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+	.wrapModules.moduleContent {
+		padding: 0.5em;
+		margin-top: -0.5em;
+		overflow: hidden;
+		zoom: 1;
+	}
+	/* angles */
+	.wrapModules .topRight {
+		float: right;
+		width: 10px;
+		height: 32px;
+		background: transparent url(img/module_top_right.gif) no-repeat;
+	}
+	.wrapModules .topLeft {
+		float: left;
+		width: 10px;
+		height: 32px;
+		background: transparent url(img/module_top_left.gif) no-repeat;
+	}
+	.wrapModules .bottomRight {
+		float: right;
+		width: 10px;
+		height: 10px;
+		background: transparent url(img/module_bottom_right.gif) no-repeat;
+	}
+	.wrapModules .bottomLeft {
+		float: left;
+		width: 10px;
+		height: 10px;
+		background: transparent url(img/module_bottom_left.gif) no-repeat;
+	}
+	/* cotés */
+	.wrapModules .sideLeft {
+		height: 100%;
+		background: transparent url(img/module_side_left.gif) top left repeat-y;
+	}
+	.wrapModules .sideRight {
+		height: 100%;
+		background: transparent url(img/module_side_right.gif) top right repeat-y;
+	}
+	.wrapModules .sideTop {
+		width: auto;
+		height: 32px;
+		background: transparent url(img/module_side_top.gif) repeat-x;
+	} 
+	.wrapModules .sideBottom {
+		width: auto;
+		height: 10px;
+		background: transparent url(img/module_side_bottom.gif) repeat-x;
+	}
+/* Présentation */
+html, body {
+  /*margin: 0;
+  padding: 0;*/
+}
+body {
+  /*font-size: 75%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+	margin-top: 1em;*/
+}
+.wrapModules h1 {
+		margin: 0;
+		font-size: 1.2em;
+		color: #666;
+		text-align: center;
+	}
+.wrapModules h2,.wrapModules h3,.wrapModules h4 {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+.wrapModules p {
+	padding: 0;
+	margin: 0;
+}
+.wrapModules blockquote {
+	margin: 0;
+	padding: 0 1em 0 0;
+	font-style:italic;
+	border: 1px solid #C2C4C9;
+	 border-width: 0 3px 0 0;
+}
+.wrapModules hr {
+	height: 3px;
+	margin: 0.5em 0;
+	padding: 0;
+	color: #C2C4C9;
+	background-color: #C2C4C9;
+	border: 0;
+}
+.wrapModules .cols {
+	padding: 1em;
+}
+.wrapModules .clear {
+	clear: both;
+}
+.wrapModules #col1 {
+	float: left;
+	width: 28%;
+}
+.wrapModules #col2 {
+margin-left: 28%;
+}
+.wrapModules #col3 {
+	float: right;
+	margin-left: 56%;
+}
+.wrapModules .center {
+text-align: center;
+}

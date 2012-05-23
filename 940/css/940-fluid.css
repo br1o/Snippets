@@ -1,0 +1,203 @@
+/*
+	940.CSS Version Fluide
+	Version : 0.5
+	Auteur : Bruno Bichet @br1o
+
+	Détails : 
+	http://css.4design.tl/940-css-fluide
+	http://css4design.com/frameworks-css-fusion-blueprint-960-gs-the-simpler-grid
+
+	Existe en version fixe : http://css.4design.tl/exemples/940/css/940.css
+	 
+	Inspiration : 
+	http://blueprintcss.org
+	http://960.gs
+	http://webdesignerwall.com/tutorials/the-simpler-css-grid
+
+	Licence : GPL et MIT
+
+	Document presque valide CSS niveau 2.1 : http://plus.tl/940-fluid
+*/
+
+/* Au cas où vous auriez besoin d'un "container" pour un background. 
+   Il sera peut-être nécessaire de spécifier un background sur la balise html. */
+body {
+	width: 98%;
+	margin: 0 auto;
+}
+
+/* Groupez vos colonnes dans un container. 
+   Il est possible d'avoir plusieurs containers. */
+.container {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Un clearfix peut être nécessaire */
+.container:before, .container:after { content: ""; display: table; }
+.container:after { clear: both; }
+.container { *zoom: 1; }
+
+/* Affichez la grille de mise en page sur un élément .container 
+   pour aligner vos éléments sur une largeur fixe, 
+   puis supprimez les propriétés background et width pour retrouver la fluidité */
+.showgrid { 
+	/*background: url(../img/grid.png) repeat-y top center; 
+	width: 940px;*/
+}
+
+/* Réglages de base pour les colonnes et la gouttière. */
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24,
+.span-twelfth, .span-eighth, .span-sixth, .span-quarter, .span-third, .span-half  {
+	float: left;
+	margin-left: 2.1276595744680851063829787234043%;
+	position: relative;
+}
+
+/* La première colonne a besoin de cette classe. 
+   Possibilité de remplacer .first par :first-child à partir de IE7 et selon la structure de votre document */
+.first { 
+	margin-left: 0;
+	clear: left; 
+}
+
+/* Largeur des colonnes */
+.span-1  { width: 2.1276595744680851063829787234043%; } 
+.span-2, .span-twelfth  { width: 6.3829787234042553191489361702128%; } 
+.span-3, .span-eighth  { width: 10.638297872340425531914893617021%; } 
+.span-4, .span-sixth  { width: 14.89361702127659574468085106383%; } 
+.span-5  { width: 19.148936170212765957446808510638%; } 
+.span-6, .span-quarter  { width: 23.404255319148936170212765957447%; } 
+.span-7  { width: 27.659574468085106382978723404255%; } 
+.span-8, .span-third  { width: 31.914893617021276595744680851064%; } 
+.span-9  { width: 36.170212765957446808510638297872%; } 
+.span-10  { width: 40.425531914893617021276595744681%; } 
+.span-11  { width: 44.680851063829787234042553191489%; } 
+.span-12, .span-half  { width: 48.936170212765957446808510638298%; } 
+.span-13  { width: 53.191489361702127659574468085106%; } 
+.span-14  { width: 57.446808510638297872340425531915%; } 
+.span-15  { width: 61.702127659574468085106382978723%; } 
+.span-16  { width: 65.957446808510638297872340425532%; } 
+.span-17  { width: 70.21276595744680851063829787234%; } 
+.span-18  { width: 74.468085106382978723404255319149%; } 
+.span-19  { width: 78.723404255319148936170212765957%; } 
+.span-20  { width: 82.978723404255319148936170212766%; } 
+.span-21  { width: 87.234042553191489361702127659574%; } 
+.span-22  { width: 91.489361702127659574468085106383%; } 
+.span-23  { width: 95.744680851063829787234042553191%; } 
+.span-24  { width: 100%; margin-left: 0; clear: left; } 
+
+/* Ajoutez des colonnes vides après votre élément (suffixe). */
+.append-1  { padding-right: 4.2553191489361702127659574468085%; } 
+.append-2, .append-twelfth  { padding-right: 8.510638297872340425531914893617%; } 
+.append-3, .append-eighth  { padding-right: 12.765957446808510638297872340426%; } 
+.append-4, .append-sixth  { padding-right: 17.021276595744680851063829787234%; } 
+.append-5  { padding-right: 21.276595744680851063829787234043%; } 
+.append-6, .append-quarter  { padding-right: 25.531914893617021276595744680851%; } 
+.append-7  { padding-right: 29.78723404255319148936170212766%; } 
+.append-8, .append-third  { padding-right: 34.042553191489361702127659574468%; } 
+.append-9  { padding-right: 38.297872340425531914893617021277%; } 
+.append-10  { padding-right: 42.553191489361702127659574468085%; } 
+.append-11  { padding-right: 46.808510638297872340425531914894%; } 
+.append-12, .append-half  { padding-right: 51.063829787234042553191489361702%; } 
+.append-13  { padding-right: 55.319148936170212765957446808511%; } 
+.append-14  { padding-right: 59.574468085106382978723404255319%; } 
+.append-15  { padding-right: 63.829787234042553191489361702128%; } 
+.append-16  { padding-right: 68.085106382978723404255319148936%; } 
+.append-17  { padding-right: 72.340425531914893617021276595745%; } 
+.append-18  { padding-right: 76.595744680851063829787234042553%; } 
+.append-19  { padding-right: 80.851063829787234042553191489362%; } 
+.append-20  { padding-right: 85.10638297872340425531914893617%; } 
+.append-21  { padding-right: 89.361702127659574468085106382979%; } 
+.append-22  { padding-right: 93.617021276595744680851063829787%; } 
+.append-23  { padding-right: 97.872340425531914893617021276596%; }
+.append-24  { padding-right: 102.1276595744680851063829787234%; } 
+
+/* Ajoutez des colonnes vides avant votre élément (préfixe). */
+.prepend-1  { padding-left: 4.2553191489361702127659574468085%; } 
+.prepend-2, .prepend-twelfth  { padding-left: 8.510638297872340425531914893617%; } 
+.prepend-3, .prepend-eighth  { padding-left: 12.765957446808510638297872340426%; } 
+.prepend-4, .prepend-sixth  { padding-left: 17.021276595744680851063829787234%; } 
+.prepend-5  { padding-left: 21.276595744680851063829787234043%; } 
+.prepend-6, .prepend-quarter  { padding-left: 25.531914893617021276595744680851%; } 
+.prepend-7  { padding-left: 29.78723404255319148936170212766%; } 
+.prepend-8, .prepend-third  { padding-left: 34.042553191489361702127659574468%; } 
+.prepend-9  { padding-left: 38.297872340425531914893617021277%; } 
+.prepend-10  { padding-left: 42.553191489361702127659574468085%; } 
+.prepend-11  { padding-left: 46.808510638297872340425531914894%; } 
+.prepend-12, .prepend-half  { padding-left: 51.063829787234042553191489361702%; } 
+.prepend-13  { padding-left: 55.319148936170212765957446808511%; } 
+.prepend-14  { padding-left: 59.574468085106382978723404255319%; } 
+.prepend-15  { padding-left: 63.829787234042553191489361702128%; } 
+.prepend-16  { padding-left: 68.085106382978723404255319148936%; } 
+.prepend-17  { padding-left: 72.340425531914893617021276595745%; } 
+.prepend-18  { padding-left: 76.595744680851063829787234042553%; } 
+.prepend-19  { padding-left: 80.851063829787234042553191489362%; } 
+.prepend-20  { padding-left: 85.10638297872340425531914893617%; } 
+.prepend-21  { padding-left: 89.361702127659574468085106382979%; } 
+.prepend-22  { padding-left: 93.617021276595744680851063829787%; } 
+.prepend-23  { padding-left: 97.872340425531914893617021276596%; }
+.prepend-24  { padding-left: 102.1276595744680851063829787234%; } 
+
+/* Tirez un élément vers la colonne précédente. */
+.pull-1 { left: -4.2553191489361702127659574468085%; }
+.pull-2, .pull-twelfth { left: -8.510638297872340425531914893617%; }
+.pull-3, .pull-eighth { left: -12.765957446808510638297872340426%; }
+.pull-4, .pull-sixth { left: -17.021276595744680851063829787234%; }
+.pull-5 { left: -21.276595744680851063829787234043%; }
+.pull-6, .pull-quarter { left: -25.531914893617021276595744680851%; }
+.pull-7 { left: -29.78723404255319148936170212766%; }
+.pull-8, .pull-third { left: -34.042553191489361702127659574468%; }
+.pull-9 { left: -38.297872340425531914893617021277%; }
+.pull-10 { left: -42.553191489361702127659574468085%; }
+.pull-11 { left: -46.808510638297872340425531914894%; }
+.pull-12, .pull-half { left: -51.063829787234042553191489361702%; }
+.pull-13 { left: -55.319148936170212765957446808511%; }
+.pull-14 { left: -59.574468085106382978723404255319%; }
+.pull-15 { left: -63.829787234042553191489361702128%; }
+.pull-16 { left: -68.085106382978723404255319148936%; }
+.pull-17 { left: -72.340425531914893617021276595745%; }
+.pull-18 { left: -76.595744680851063829787234042553%; }
+.pull-19 { left: -80.851063829787234042553191489362%; }
+.pull-20 { left: -85.10638297872340425531914893617%; }
+.pull-21 { left: -89.361702127659574468085106382979%; }
+.pull-22 { left: -93.617021276595744680851063829787%; }
+.pull-23 { left: -97.872340425531914893617021276596%; }
+.pull-24 { left: -102.1276595744680851063829787234%; }
+
+/* Poussez un élément dans la colonne suivante. */
+.push-1 { left: 4.2553191489361702127659574468085%; }
+.push-2, .push-twelfth { left: 8.510638297872340425531914893617%; }
+.push-3, .push-eighth { left: 12.765957446808510638297872340426%; }
+.push-4, .push-sixth { left: 17.021276595744680851063829787234%; }
+.push-5 { left: 21.276595744680851063829787234043%; }
+.push-6, .push-quarter { left: 25.531914893617021276595744680851%; }
+.push-7 { left: 29.78723404255319148936170212766%; }
+.push-8, .push-third { left: 34.042553191489361702127659574468%; }
+.push-9 { left: 38.297872340425531914893617021277%; }
+.push-10 { left: 42.553191489361702127659574468085%; }
+.push-11 { left: 46.808510638297872340425531914894%; }
+.push-12, .push-half { left: 51.063829787234042553191489361702%; }
+.push-13 { left: 55.319148936170212765957446808511%; }
+.push-14 { left: 59.574468085106382978723404255319%; }
+.push-15 { left: 63.829787234042553191489361702128%; }
+.push-16 { left: 68.085106382978723404255319148936%; }
+.push-17 { left: 72.340425531914893617021276595745%; }
+.push-18 { left: 76.595744680851063829787234042553%; }
+.push-19 { left: 80.851063829787234042553191489362%; }
+.push-20 { left: 85.10638297872340425531914893617%; }
+.push-21 { left: 89.361702127659574468085106382979%; }
+.push-22 { left: 93.617021276595744680851063829787%; }
+.push-23 { left: 97.872340425531914893617021276596%; }
+.push-24 { left: 102.1276595744680851063829787234%; }
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24,
+.pull-twelfth, .pull-eighth, .pull-sixth, .pull-quarter, .pull-third, .pull-half,
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24,
+.push-twelfth, .push-eighth, .push-sixth, .push-quarter, .push-third, .push-half {
+	position: relative;
+	z-index: 1;
+}
+
+/* Merci de votre attention. */

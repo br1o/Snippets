@@ -1,0 +1,8 @@
+/* layout-bg-right.css */
+
+#container {
+	background: url(images/bgContainer-right.png) repeat-y;
+}
+#main {
+	float: left;
+}

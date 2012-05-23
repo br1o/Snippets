@@ -1,0 +1,58 @@
+/* Style général du menu */   
+
+#menu {
+     margin: 0;
+     padding: 0;
+}
+#menu ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+#menu ul li {
+     float: left;
+ }   
+
+ /* Style global des liens */   
+
+a#index,
+a#page1,
+a#page2 {
+     display: block;
+     width: 100px;
+     height: 25px;
+ }  
+
+/* Style particulier pour le background des liens
+avec pour chacun : l'état inactif et actif */  
+
+a#index {
+    background: url(images/bt.png) 0 0 no-repeat;
+}
+a#index:hover {
+    background: url(images/bt.png) 0 -25px no-repeat;
+}
+a#page1 {
+    background: url(images/bt.png) 0 0 no-repeat;
+}
+a#page1:hover {
+    background: url(images/bt.png) 0 -25px no-repeat;
+}
+a#page2 {
+    background: url(images/bt.png) 0 0 no-repeat;
+}
+a#page2:hover {
+    background: url(images/bt.png) 0 -25px no-repeat;
+}
+
+/* Styles particuliers issus de la fonction PHP pour les liens en cours */   
+
+#menu a.current_index {
+    background: url(images/bt.png) 0 -25px no-repeat;
+}
+#menu a.current_page1 {
+    background: url(images/bt.png) 0 -25px no-repeat;
+}
+#menu a.current_page2 {
+    background: url(images/bt.png) 0 -25px no-repeat;
+}

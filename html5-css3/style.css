@@ -1,0 +1,286 @@
+/* \\//\\//\\/\\//\\//\\//\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/
+
+	index.css
+    By Bruno Bichet - http://css4design.com
+
+\\//\\//\\/\\//\\//\\//\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/\\//\\//\\/ */
+
+@import "global.css";
+
+/* --------------------------------------------------------------
+   1. Document
+-------------------------------------------------------------- */
+
+
+/* ---------------------
+   a. General Structure
+                       */
+html {
+    background: #380707;
+    color: #cbb388;
+}
+body {
+    position: relative;
+    width: 960px;
+    margin: 6em auto;
+    padding: 1.5em 9px;
+    border: 1px solid #1F0404;
+    /* Degrade */
+    background: #590b0b;
+    background: -moz-linear-gradient(-90deg,#590b0b,#1F0404);
+    background: -webkit-gradient(linear, left top, left bottom, from(#590b0b), to(#1F0404));
+    /* Ombre portee */
+    -webkit-box-shadow: #000 0px 0 16px -1px;
+	-moz-box-shadow: #000 0px 0 16px -1px;
+	box-shadow: #000 0px 0 16px -1px;
+}
+#container {
+	width: 942px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    background: #380707;
+    -webkit-box-shadow: #000 0px 0 8px -1px;
+	-moz-box-shadow: #000 0px 0 8px -1px;
+	box-shadow: #000 0px 0 8px -1px;
+    overflow: hidden;
+    height: 1%;
+    /*background: url(grid.png);*/
+}
+
+
+/* ---------------------
+   b. General Header
+                       */
+#intro {
+    position: relative;
+    overflow: hidden;
+    height: 1%;
+}
+#brand h1 {
+    font-size: 4.8em;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    /* Texte ombres */
+    text-shadow: rgba(0,0,0,0.7) 2px 3px,rgba(255,255,255,0.7) 0 -1px;
+}
+#brand h2 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-size: 1.8em;
+    margin-top: 0.75em;
+    color: #cbb388;
+    font-style: italic;
+}
+#menu-top {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+#menu-top li {
+    display: inline;
+}
+#menu-top a {
+    display: block;
+    float: left;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    margin-left: 1em;
+    background: #380707;
+}
+#menu-top a:hover,
+#menu-top a:focus {
+   background: #f29f05;
+   color: #590b0b;
+}
+
+/* ---------------------
+   c. Content Header
+                       */
+#presentation {
+    width: 822px;
+    margin: 1.5em 0 0.5em 0;
+    display: inline;
+	float: left;
+	margin-right: 0;
+    padding-left:60px;
+    padding-right:60px;
+    font-size: 1.5em;
+    font-family: Georgia, sans-serif;
+}
+
+
+/* ---------------------
+   d. Main Content
+                       */
+#articles {
+    width:462px;
+    display: inline;
+	float: left;
+	margin-right: 18px;
+}
+#articles ul, #articles ol, #articles dl {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+#sidebar-1 {
+    width: 282px;
+    display: inline;
+	float: left;
+	margin-right: 18px;
+    /* Degrade */
+    background: #4F0303;
+    background: -moz-linear-gradient(-90deg,#4F0303,#380707);
+    background: -webkit-gradient(linear, left top, left bottom, from(#4F0303), to(#380707));
+    /* Ombre portee */
+    -webkit-box-shadow: #000 0px 0 16px -1px;
+	-moz-box-shadow: #000 0px 0 16px -1px;
+	box-shadow: #000 0px 0 16px -1px;
+}
+#sidebar-2 {
+    width: 162px;
+    margin-right: 0;
+    margin-top: 1.5em;
+    display: inline;
+	float: left;
+    font-size: 0.875em;
+}
+* html #sidebar-2 {
+    margin-left: -3px;
+}
+
+
+/* ---------------------
+   e. Articles columns
+                       */
+article {
+    margin-bottom: 1.5em;
+    padding: 0 3px 15px 15px;
+    text-align: justify;
+    position: relative;
+}
+article ul {
+    list-style: square;
+}
+article ol {
+    list-style: lower-latin;
+}
+article li {
+    margin-bottom: 0.5em;
+}
+article h1 {
+     padding: 0.25em 0.25em 0.15em 0.25em;
+     font-size: 1.875em;
+     text-align: left;
+     background: #4F0303;
+}
+.lettrine {
+    margin-top: -0.2em;
+    padding-right: 0.25em;
+    display: block;
+    height: 1em;
+    float: left;
+    font-size: 3em;
+    text-shadow: rgba(0,0,0,0.7) 2px 3px;
+}
+.category-top a {
+    background: #4F0303;
+    padding: 0.25em 0.5em;
+}
+article section h1 {
+    background: none;
+}
+article footer {
+    padding: 0.25em 0.5em;
+    margin-top: 1.5em;
+    font: italic 0.875em Georgia, sans-serif;
+    background: #4F0303;
+}
+article footer p {
+    margin: 0;
+    padding: 0.25em 0.5em;
+    text-align: center;
+}
+header.box {
+    padding-top: 1em;
+}
+
+
+/* ---------------------
+   f. Sidebars
+                       */
+.sidebars ul {
+    list-style: circle;
+    margin-left: 1.5em;
+}
+.sidebars ol {
+    list-style: decimal;
+    margin-left: 0.5em;
+    list-style-position: inside;
+}
+.sidebars li {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+.sidebars ul ul {
+    margin-left: 1em;
+}
+.sidebars ul ul li {
+    margin-bottom: 0;
+}
+#sidebar-2 .box{
+   padding: 0 15px 15px 0;
+}
+#sidebar-2 li {
+    border-bottom: 1px solid #4B0303;
+}
+#sidebar-2 ul {
+    list-style-position: inside;
+    margin-left: 0.5em;
+}
+
+
+/* ---------------------
+   g. Content Footer
+                       */
+#outro-1 {
+    width: 912px;
+    margin: 15px 15px 0 15px;
+    display: inline;
+    float: left;
+    position: relative;
+    clear: both;
+    background: #590b0b;
+    /* Ombre portee */
+    -webkit-box-shadow: #000 0px 0 16px -1px;
+	-moz-box-shadow: #000 0px 0 16px -1px;
+	box-shadow: #000 0px 0 16px -1px;
+}
+#outro-1 p {
+   margin-bottom: 0.5em;
+   text-align: center;
+}
+#incentive {
+    font-size: 1.5em;
+}
+
+
+/* ---------------------
+   h. General Footer
+                       */
+#outro-2 {
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    font-size: 1.2em;
+}
+#outro-2 p {
+    margin: 1em 0 0 0;
+    text-align: center;
+}

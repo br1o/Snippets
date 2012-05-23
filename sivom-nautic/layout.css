@@ -1,0 +1,41 @@
+/* layout.css */
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+body * {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	position: relative;
+	width: 817px;
+	margin: 0 auto;
+	text-align: left;
+	border: 1px solid #0E419A;
+	background-color: #2677B9;
+}
+#header {
+	width: 817px;
+	height: 154px;
+	background: url(images/bandeau.jpg) no-repeat;
+}
+#main {
+	text-align: justify;
+	line-height: 1.75em;
+	width: 620px;
+	min-height: 1034px;
+	float: right;
+	padding: 1em;
+	background-color: #D1D9EC;
+	background: url(images/fond_gros_bloc.jpg);
+}
+#footer {
+	background-color: #0E419A;
+	clear: both;
+}
+#sidebar {
+	width: 151px;
+	float: left;
+}

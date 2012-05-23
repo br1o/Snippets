@@ -1,0 +1,119 @@
+html {
+	background: #EBEAE7;
+}
+body {
+	width: 70%;
+	margin: 20px auto;
+	border: 1px dotted #cecece;
+	display: table;
+	border-spacing: 20px 0;
+	background: #D5D19F url(img/stripe1.png);
+}
+
+/**
+ * common 
+ */
+a {
+	color: #A6270A;
+} 
+header {
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: darkred;
+}
+footer {
+	font-style: italic;
+}
+
+/**
+ * Structure
+ */
+header[role="banner"] {
+	/*background: #687391;*/
+	font-weight: normal;
+	margin-top: 20px;
+	color: #000000;
+	
+}
+hgroup {
+	padding: 20px;
+	background: #D56008 url(img/stripe3.png);
+}
+hgroup h1{
+	margin: 0 0 20px 0;
+}
+hgroup h2 {
+	margin: 0;
+}
+nav {
+	margin: 20px 0;
+	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.5);
+}
+nav ul {
+	display: table;
+	width: 100%;
+}
+nav > ul > li {
+	display: table-cell;
+	border-radius: 0.5em;
+	background: #000000;
+	padding: 0.25em 1em;
+	margin-right: 1em;
+	color: #DBC545;
+	text-align: center;
+	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.5);
+}
+.ie6 nav li, 
+.ie7 nav li {
+	display: inline;
+	zoom: 1;
+}
+div[role="main"] {
+	background: #525453 url(img/stripe2.png);
+}
+article, 
+aside {
+	display: table-cell;
+	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.5);
+}
+.ie6 article, 
+.ie7 article {
+	float: left;
+	margin-left: 20px;
+	width: 63%;
+	margin-right: 20px;
+}
+.ie6 aside, 
+.ie7 aside {
+	float: right;
+	margin-right: 20px;
+	width: 300px;
+}
+article {
+	
+}
+article p:first-child {
+	font-size: 1.5em;
+}
+aside {
+	width: 300px;
+}
+aside ul {
+	list-style: inside square;
+	margin: 0;
+}
+footer[role="contentinfo"] {
+	font-style: normal;
+	padding: 20px;
+}
+.ie6 footer, 
+.ie7 footer {
+	clear: both;
+}
+article > h1, 
+aside > h1 {
+	margin: 0 0 20px 0;
+}

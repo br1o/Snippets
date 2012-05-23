@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sélecteur d'enfant adjacent</title>
+<meta name="description" content="Utiliser le sélecteur d'enfant adjacent pour créer une grille de mise en page web">
+<style>
+a { color: #eee; }
+p { padding: .5em; }
+h1 {margin: 0; padding: .25em; } 
+#page {
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+}
+[role="banner"],
+[role="contentinfo"] {
+	clear: both;
+	background: #333;
+	color: #eee;
+}
+[role="main"] > div {
+	width: 60px;
+	float: left;
+	background: #eee;
+	margin: 1.539em 0;
+}
+[role="main"] > div + div {
+	margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<div id="page">
+	<div role="banner"><h1>An experimental grid with adjacent Sibling Selector</h1></div>
+	<div role="main">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+		<div><p>4</p></div>	
+		<div><p>5</p></div>
+		<div><p>6</p></div>	
+		<div><p>7</p></div>
+		<div><p>8</p></div>
+		<div><p>9</p></div>
+		<div><p>10</p></div>
+		<div><p>11</p></div>
+		<div><p>12</p></div>
+	</div>
+	<div role="contentinfo"><p>Read <a title="(Dirty Grids Done Dirt Cheap)" href="http://css4design.com/css-selecteur-frere-adjacent">Sélecteur CSS de frère adjacent</a> (in french)</p></div>
+</div> <!-- eo #page -->
+</body>
+</html>
